@@ -11,12 +11,45 @@
       crossorigin="anonymous"
     />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./src/style.css" />
     <title>Weather or Not 2.0</title>
   </head>
   <body>
     <main>
-      <section class="glass"></section>
+      <section class="glass">
+        <div class="container">
+          <div class="weather-app-wrapper">
+            <div class="weather-app">
+              <form class="mb-3" id="search-form">
+                <div class="row justify-content-md-center">
+                  <div class="col-md-auto">
+                    <input
+                      type="search"
+                      placeholder="Enter city name"
+                      id="city-input"
+                      class="form-control"
+                      autocomplete="off"
+                    />
+                  </div>
+                  <div class="col-md-auto">
+                    <button id="search-btn" class="btn btn-secondary">
+                      Search
+                    </button>
+                    <button id="current-location" class="btn btn-secondary">
+                      Current Location
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
     <script src="./src/app.js"></script>
   </body>
