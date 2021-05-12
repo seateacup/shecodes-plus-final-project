@@ -48,13 +48,17 @@ li {
   line-height: 19xpx;
 }
 
+.results li {
+  font-weight: 500;
+}
+
 .weather-app-wrapper {
   width: 80%;
   margin: 30px auto;
 }
 
 .overview {
-  margin-bottom: 20pxd;
+  margin-bottom: 30px;
 }
 
 /* footer {
