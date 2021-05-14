@@ -17,7 +17,7 @@ section {
     rgba(255, 255, 255, 0.7)
   );
   min-height: 50vh;
-  width: 80%;
+  width: 800px;
   border-radius: 40px;
   margin-top: -500px;
 }
@@ -83,8 +83,7 @@ li:first-letter {
   text-decoration: none;
 }
 
-/* footer {
-  display: block;
-  margin: 0 auto;
-  text-align: center;
+/* .code-source div {
+  position: absolute;
+  bottom: 0;
 } */
