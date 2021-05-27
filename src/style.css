@@ -84,10 +84,10 @@ li:first-letter {
   text-decoration: none;
 }
 
-/* .code-source div {
+.code-source {
   position: absolute;
   bottom: 0;
-} */
+}
 
 .weather-forecast {
   margin-top: 20px;
