@@ -21,6 +21,31 @@ function formatDate() {
 
 formatDate();
 
+function displayForecast() {
+    let forecastElement = document.querySelector("#forecast");
+
+    let forecastHTML = `<div class = "row">`;
+    forecastHTML = forecastHTML + `
+                  <div class="col-2">
+                    <div class="weather-forecast-date">Thu</div>
+                    <img
+                      src="http://openweathermap.org/img/wn/01d@2x.png"
+                      width="60px"
+                      alt=""
+                    />
+                    <div class="weather-forecast-temperature">
+                      <span class="weather-forecast-temperature-maximum"
+                        >18°</span
+                      >
+                      <span class="weather-forecast-temperature-minimum"
+                        >12°</span
+                      >
+                    </div>
+                </div>`;
+    forecastHTML = `</div>`;
+    forecastElement.innerHTML = forecastHTML;
+    
+}
 
 function displayTemperature(response) {
     let cityElement = document.querySelector("#city");
@@ -110,3 +135,5 @@ celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 let currentBtn = document.querySelector("#current-location");
 currentBtn.addEventListener("click", navigator.geolocation.getCurrentPosition(showPosition));
+
+displayForecast();
